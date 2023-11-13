@@ -4,17 +4,11 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\fHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Forms\MainForm.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\UserControls\BillPageUserControl.cs">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="GUI\UserControls\HomePageUserControl.cs">
       <SubType>UserControl</SubType>
