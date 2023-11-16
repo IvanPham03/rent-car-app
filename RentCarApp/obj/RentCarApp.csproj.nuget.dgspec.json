@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\Year-3-HK1\\Công nghệ .NET\\Midle\\rent-car-app\\RentCarApp\\RentCarApp.csproj": {}
+    "C:\\Users\\PC\\Desktop\\NAP\\rent-car-app\\RentCarApp\\RentCarApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\Year-3-HK1\\Công nghệ .NET\\Midle\\rent-car-app\\RentCarApp\\RentCarApp.csproj": {
+    "C:\\Users\\PC\\Desktop\\NAP\\rent-car-app\\RentCarApp\\RentCarApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Year-3-HK1\\Công nghệ .NET\\Midle\\rent-car-app\\RentCarApp\\RentCarApp.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\NAP\\rent-car-app\\RentCarApp\\RentCarApp.csproj",
         "projectName": "RentCarApp",
-        "projectPath": "C:\\Users\\PC\\Desktop\\Year-3-HK1\\Công nghệ .NET\\Midle\\rent-car-app\\RentCarApp\\RentCarApp.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\NAP\\rent-car-app\\RentCarApp\\RentCarApp.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\Year-3-HK1\\Công nghệ .NET\\Midle\\rent-car-app\\RentCarApp\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\NAP\\rent-car-app\\RentCarApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

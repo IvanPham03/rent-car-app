@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v05ETixE0Lup/Bfx2lVDW8q4cweOfoOqv0deCBOZT/cHg+E2sqQx8/ZcUUPOp6Hsvyc1Z8z1cweOg9jJ1gBEuA==",
+  "dgSpecHash": "LUrcPa0ngsVwAy3wNUXZc9KafT33VwkJLjJcYuJkikI7xEacddQ9YLHgdjGQmMxrbKmnmAuvOJRMOcHnbwpTHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\Year-3-HK1\\Công nghệ .NET\\Midle\\rent-car-app\\RentCarApp\\RentCarApp.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\NAP\\rent-car-app\\RentCarApp\\RentCarApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
