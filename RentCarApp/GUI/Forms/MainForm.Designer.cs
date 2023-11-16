@@ -99,7 +99,7 @@
             billsMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             billsMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             billsMenuButton.FlatStyle = FlatStyle.Flat;
-            billsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            billsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             billsMenuButton.ForeColor = Color.White;
             billsMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             billsMenuButton.Location = new Point(7, 192);
@@ -111,6 +111,7 @@
             billsMenuButton.Text = "   Bills";
             billsMenuButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             billsMenuButton.UseVisualStyleBackColor = false;
+            billsMenuButton.Click += billsMenuButton_Click;
             // 
             // settingsMenuButton
             // 
@@ -120,7 +121,7 @@
             settingsMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             settingsMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             settingsMenuButton.FlatStyle = FlatStyle.Flat;
-            settingsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            settingsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             settingsMenuButton.ForeColor = Color.White;
             settingsMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             settingsMenuButton.Location = new Point(7, 568);
@@ -132,6 +133,7 @@
             settingsMenuButton.Text = "   Settings";
             settingsMenuButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             settingsMenuButton.UseVisualStyleBackColor = false;
+            settingsMenuButton.Click += settingsMenuButton_Click;
             // 
             // homeMenuButton
             // 
@@ -141,7 +143,7 @@
             homeMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             homeMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             homeMenuButton.FlatStyle = FlatStyle.Flat;
-            homeMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            homeMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             homeMenuButton.ForeColor = Color.White;
             homeMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             homeMenuButton.Location = new Point(7, 5);
@@ -163,7 +165,7 @@
             usersMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             usersMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             usersMenuButton.FlatStyle = FlatStyle.Flat;
-            usersMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            usersMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             usersMenuButton.ForeColor = Color.White;
             usersMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             usersMenuButton.Location = new Point(7, 474);
@@ -175,6 +177,7 @@
             usersMenuButton.Text = "   Users";
             usersMenuButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             usersMenuButton.UseVisualStyleBackColor = false;
+            usersMenuButton.Click += usersMenuButton_Click;
             // 
             // clientsMenuButton
             // 
@@ -184,7 +187,7 @@
             clientsMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             clientsMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             clientsMenuButton.FlatStyle = FlatStyle.Flat;
-            clientsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            clientsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             clientsMenuButton.ForeColor = Color.White;
             clientsMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             clientsMenuButton.Location = new Point(7, 380);
@@ -196,6 +199,7 @@
             clientsMenuButton.Text = "   Clients";
             clientsMenuButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             clientsMenuButton.UseVisualStyleBackColor = false;
+            clientsMenuButton.Click += clientsMenuButton_Click;
             // 
             // carsMenuButton
             // 
@@ -205,7 +209,7 @@
             carsMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             carsMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             carsMenuButton.FlatStyle = FlatStyle.Flat;
-            carsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            carsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             carsMenuButton.ForeColor = Color.White;
             carsMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             carsMenuButton.Location = new Point(7, 286);
@@ -217,6 +221,7 @@
             carsMenuButton.Text = "   Cars";
             carsMenuButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             carsMenuButton.UseVisualStyleBackColor = false;
+            carsMenuButton.Click += carsMenuButton_Click;
             // 
             // rentsMenuButton
             // 
@@ -226,7 +231,7 @@
             rentsMenuButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(115, 122, 136);
             rentsMenuButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(37, 40, 42);
             rentsMenuButton.FlatStyle = FlatStyle.Flat;
-            rentsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            rentsMenuButton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             rentsMenuButton.ForeColor = Color.White;
             rentsMenuButton.ImageAlign = ContentAlignment.MiddleLeft;
             rentsMenuButton.Location = new Point(7, 98);
@@ -238,12 +243,13 @@
             rentsMenuButton.Text = "   Rents";
             rentsMenuButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             rentsMenuButton.UseVisualStyleBackColor = false;
+            rentsMenuButton.Click += rentsMenuButton_Click;
             // 
             // datetimeLabel
             // 
             datetimeLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             datetimeLabel.AutoSize = true;
-            datetimeLabel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            datetimeLabel.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             datetimeLabel.ForeColor = Color.Silver;
             datetimeLabel.Location = new Point(49, 819);
             datetimeLabel.Margin = new Padding(0);
@@ -289,7 +295,7 @@
             // 
             appUserRoleLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             appUserRoleLabel.AutoSize = true;
-            appUserRoleLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            appUserRoleLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
             appUserRoleLabel.ForeColor = Color.White;
             appUserRoleLabel.Location = new Point(128, 74);
             appUserRoleLabel.Margin = new Padding(4, 0, 4, 0);
@@ -304,7 +310,7 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Font = new Font("Lucida Handwriting", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Lucida Handwriting", 12F, FontStyle.Bold);
             label2.ForeColor = Color.White;
             label2.Location = new Point(59, 17);
             label2.Margin = new Padding(4, 0, 4, 0);

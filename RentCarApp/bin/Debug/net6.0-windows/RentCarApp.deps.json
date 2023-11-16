@@ -8,11 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "RentCarApp/1.0.0": {
         "dependencies": {
+          "Krypton.Navigator.Lite": "80.23.11.318",
+          "Krypton.Ribbon.Lite": "80.23.11.318",
+          "Krypton.Toolkit.Lite": "80.23.11.318",
+          "Krypton.Workspace.Lite": "80.23.11.318",
           "Microsoft.Data.SqlClient": "5.1.2",
-          "Microsoft.SqlServer.Server": "1.0.0",
-          "SqlDataAccessHelper": "1.0.0",
-          "System.Collections": "4.3.0",
-          "System.Data.SqlClient": "4.8.5"
+          "SqlConnection": "1.0.4",
+          "System.Data.SqlClient": "4.8.5",
+          "System.Drawing.Common": "8.0.0",
+          "System.Windows.Forms.DataVisualization": "1.0.0-prerelease.20110.1"
         },
         "runtime": {
           "RentCarApp.dll": {}
@@ -49,6 +53,48 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.7.0.0",
             "fileVersion": "1.700.22.46903"
+          }
+        }
+      },
+      "Krypton.Navigator.Lite/80.23.11.318": {
+        "dependencies": {
+          "Krypton.Toolkit.Lite": "80.23.11.318"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Navigator.dll": {
+            "assemblyVersion": "80.23.11.318",
+            "fileVersion": "80.23.11.318"
+          }
+        }
+      },
+      "Krypton.Ribbon.Lite/80.23.11.318": {
+        "dependencies": {
+          "Krypton.Toolkit.Lite": "80.23.11.318"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Ribbon.dll": {
+            "assemblyVersion": "80.23.11.318",
+            "fileVersion": "80.23.11.318"
+          }
+        }
+      },
+      "Krypton.Toolkit.Lite/80.23.11.318": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "80.23.11.318",
+            "fileVersion": "80.23.11.318"
+          }
+        }
+      },
+      "Krypton.Workspace.Lite/80.23.11.318": {
+        "dependencies": {
+          "Krypton.Navigator.Lite": "80.23.11.318",
+          "Krypton.Toolkit.Lite": "80.23.11.318"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Workspace.dll": {
+            "assemblyVersion": "80.23.11.318",
+            "fileVersion": "80.23.11.318"
           }
         }
       },
@@ -230,7 +276,22 @@
           "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "Microsoft.Win32.SystemEvents/6.0.0": {},
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -265,12 +326,15 @@
           }
         }
       },
-      "SqlDataAccessHelper/1.0.0": {},
-      "System.Collections/4.3.0": {
+      "SqlConnection/1.0.4": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
+          "System.Data.SqlClient": "4.8.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLConnection.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
         }
       },
       "System.Configuration.ConfigurationManager/6.0.1": {
@@ -317,9 +381,15 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
-      "System.Drawing.Common/6.0.0": {
+      "System.Drawing.Common/8.0.0": {
         "dependencies": {
-          "Microsoft.Win32.SystemEvents": "6.0.0"
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53105"
+          }
         }
       },
       "System.Formats.Asn1/5.0.0": {},
@@ -410,7 +480,15 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "6.0.0"
+          "System.Drawing.Common": "8.0.0"
+        }
+      },
+      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20.11001"
+          }
         }
       }
     }
@@ -434,6 +512,34 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "Krypton.Navigator.Lite/80.23.11.318": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s/C4wBQgN7EyH9eWMAytFEgtYL8bWTXSimDQ4WkWsCW8tr5lIHzmcwlHiVtN77Q3u+9DCjRsW7QQx3tIE+SNAA==",
+      "path": "krypton.navigator.lite/80.23.11.318",
+      "hashPath": "krypton.navigator.lite.80.23.11.318.nupkg.sha512"
+    },
+    "Krypton.Ribbon.Lite/80.23.11.318": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U+hrVq5IWJfd6y/p3GJcfP0ajpwAOODhvYNKaloLAs1qh4T5xWtxKzcxU4QpcXwrRFIejTsmouegK/mVx9w2RQ==",
+      "path": "krypton.ribbon.lite/80.23.11.318",
+      "hashPath": "krypton.ribbon.lite.80.23.11.318.nupkg.sha512"
+    },
+    "Krypton.Toolkit.Lite/80.23.11.318": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TkfCg9sm2ITZZmn8xrY9Je8+XbJTRKAAGjGwGOsrfXA4FttoViy+b6GWqgmk0D6wyl39LfSDW3318q7swG2P/g==",
+      "path": "krypton.toolkit.lite/80.23.11.318",
+      "hashPath": "krypton.toolkit.lite.80.23.11.318.nupkg.sha512"
+    },
+    "Krypton.Workspace.Lite/80.23.11.318": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VO1KittfOMR7WNfOpG53CMWLsE2LHleZCmida5Y/Z3Ryjgmf5LSfGRTNFH/8imN5Z5dqQQ9l/1aKCtsCmfTABA==",
+      "path": "krypton.workspace.lite/80.23.11.318",
+      "hashPath": "krypton.workspace.lite.80.23.11.318.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -547,12 +653,12 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Win32.SystemEvents/6.0.0": {
+    "Microsoft.Win32.SystemEvents/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
-      "path": "microsoft.win32.systemevents/6.0.0",
-      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
@@ -582,19 +688,12 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
-    "SqlDataAccessHelper/1.0.0": {
+    "SqlConnection/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UZ3Ooi+fNI3CTScK42Q4rXf+tSQMXcxqhHN1EKeVVcOis+LshWUNGgsFnaRivckrlgcMiZpOwTjnxATNK6UIZA==",
-      "path": "sqldataaccesshelper/1.0.0",
-      "hashPath": "sqldataaccesshelper.1.0.0.nupkg.sha512"
-    },
-    "System.Collections/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
-      "path": "system.collections/4.3.0",
-      "hashPath": "system.collections.4.3.0.nupkg.sha512"
+      "sha512": "sha512-JDjswSKyrDs/A32Wq1Dsu/5VDQNLPWuVsCJzFilTKFMzTW2kLxroRtHNtEvZ1ZyYhomp1EGAqgJRIM9NI7c0Vw==",
+      "path": "sqlconnection/1.0.4",
+      "hashPath": "sqlconnection.1.0.4.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/6.0.1": {
       "type": "package",
@@ -617,12 +716,12 @@
       "path": "system.diagnostics.diagnosticsource/6.0.0",
       "hashPath": "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512"
     },
-    "System.Drawing.Common/6.0.0": {
+    "System.Drawing.Common/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
-      "path": "system.drawing.common/6.0.0",
-      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+      "sha512": "sha512-JkbHJjtI/dWc5dfmEdJlbe3VwgZqCkZRtfuWFh5GOv0f+gGCfBtzMpIVkmdkj2AObO9y+oiOi81UGwH3aBYuqA==",
+      "path": "system.drawing.common/8.0.0",
+      "hashPath": "system.drawing.common.8.0.0.nupkg.sha512"
     },
     "System.Formats.Asn1/5.0.0": {
       "type": "package",
@@ -756,6 +855,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1EdLFl/I5QobO4shpqUNslDGWTeRbpt3pLMSkiLQYzdWBDqf44/8TM5hXMtkA8ktHU80aVZYVEuxr8vJqcB1Ig==",
+      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.20110.1",
+      "hashPath": "system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512"
     }
   }
 }

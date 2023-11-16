@@ -10,16 +10,16 @@ namespace RentCarApp.DTO
     {
         public long CarId { get; set; }
         public string CarName { get; set; }
-        public string Decription {  get; set; }
+        public string Decription { get; set; }
         public long Price { get; set; }
 
-        public CarDTO(long id, string name, string des, long price) 
+        public CarDTO(long id, string name, string des, long price)
         {
             CarId = id;
             CarName = name;
             Decription = des;
             Price = price;
         }
-        
+
     }
 }

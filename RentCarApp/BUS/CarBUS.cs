@@ -19,7 +19,7 @@ namespace RentCarApp.BUS
 
         public void AddCar(string name, string des, long price)
         {
-            car.AddCar(name,des,price);
+            car.AddCar(name, des, price);
         }
 
         public void DeleteCar(long id)

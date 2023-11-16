@@ -13,7 +13,7 @@ namespace RentCarApp.DAO
     {
         public SqlConnection conn = new SqlConnection();
 
-        public DataProvider() 
+        public DataProvider()
         {
             string connectionString = @"Data Source=LAPTOP-IRVG80GT\MSSQLSERVER01;Initial Catalog=shop;Integrated Security=True";
             conn = new SqlConnection(connectionString);
@@ -23,7 +23,7 @@ namespace RentCarApp.DAO
         {
             try
             {
-                if(conn!= null && conn.State != ConnectionState.Open)
+                if (conn != null && conn.State != ConnectionState.Open)
                 {
                     conn.Open();
                 }

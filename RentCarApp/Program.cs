@@ -1,6 +1,4 @@
-
-
-namespace RentCarApp.GUI
+namespace RentCarApp
 {
     internal static class Program
     {
